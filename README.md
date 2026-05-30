@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/WassimAfouss">
+  <a href="https://github.com/Afousswassim">
     <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://www.linkedin.com/in/wassim-afouss">
@@ -70,12 +70,12 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=WassimAfouss&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Wassim Afouss GitHub stats" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=WassimAfouss&theme=tokyonight&hide_border=true" alt="Wassim Afouss GitHub streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Afousswassim&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Wassim Afouss GitHub stats" />
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Afousswassim&theme=tokyonight&hide_border=true" alt="Wassim Afouss GitHub streak" />
 </p>
 
 <p align="center">
-  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WassimAfouss&layout=compact&theme=tokyonight&hide_border=true" alt="Wassim Afouss top languages" />
+  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Afousswassim&layout=compact&theme=tokyonight&hide_border=true" alt="Wassim Afouss top languages" />
 </p>
 
 ---
@@ -84,16 +84,16 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/WassimAfouss/WassimAfouss/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/WassimAfouss/WassimAfouss/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated snake contribution graph" src="https://raw.githubusercontent.com/WassimAfouss/WassimAfouss/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afousswassim/Afousswassim/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Afousswassim/Afousswassim/output/github-contribution-grid-snake.svg" />
+    <img alt="Animated snake contribution graph" src="https://raw.githubusercontent.com/Afousswassim/Afousswassim/output/github-contribution-grid-snake-dark.svg" />
   </picture>
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=WassimAfouss&label=Profile%20Views&color=7aa2f7&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Afousswassim&label=Profile%20Views&color=7aa2f7&style=for-the-badge" alt="Profile views" />
 </p>
 
 <p align="center">
