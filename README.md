@@ -70,15 +70,13 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Afousswassim&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Wassim Afouss GitHub stats" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Afousswassim&theme=tokyonight&hide_border=true" alt="Wassim Afouss GitHub streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Afousswassim&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;rank_icon=github&amp;cache_seconds=21600" alt="Wassim Afouss GitHub stats" />
+  <img height="170" src="https://streak-stats.demolab.com?user=Afousswassim&amp;theme=tokyonight&amp;hide_border=true" alt="Wassim Afouss GitHub streak" />
 </p>
 
 <p align="center">
-  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Afousswassim&layout=compact&theme=tokyonight&hide_border=true" alt="Wassim Afouss top languages" />
+  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Afousswassim&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;cache_seconds=21600" alt="Wassim Afouss top languages" />
 </p>
-
----
 
 <h2 align="center">🐍 Contribution Graph</h2>
 
