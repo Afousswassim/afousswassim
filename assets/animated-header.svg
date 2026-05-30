@@ -1,0 +1,238 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated developer desk header for Wassim Afouss</title>
+  <desc id="desc">A looping dark theme SVG animation showing a developer at a coding desk with glowing monitors, floating code symbols, and a typing effect.</desc>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #111827;
+      --panel-2: #172033;
+      --cyan: #7dcfff;
+      --blue: #7aa2f7;
+      --green: #9ece6a;
+      --pink: #f7768e;
+      --purple: #bb9af7;
+      --text: #c0caf5;
+      --muted: #565f89;
+      --line: #29324d;
+    }
+
+    .stars circle {
+      animation: twinkle 3.6s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .stars circle:nth-child(2n) { animation-delay: .5s; }
+    .stars circle:nth-child(3n) { animation-delay: 1.1s; }
+    .stars circle:nth-child(5n) { animation-delay: 1.7s; }
+
+    .float-slow { animation: floatSlow 7s ease-in-out infinite; }
+    .float-fast { animation: floatFast 5s ease-in-out infinite; }
+    .orbit { animation: orbit 14s linear infinite; transform-origin: 600px 210px; }
+    .screen-glow { animation: glow 2.7s ease-in-out infinite; }
+    .cursor { animation: blink .9s steps(1) infinite; }
+    .hand-left { animation: typeLeft .75s ease-in-out infinite; transform-origin: 505px 283px; }
+    .hand-right { animation: typeRight .8s ease-in-out infinite; transform-origin: 646px 284px; }
+    .head { animation: nod 4.5s ease-in-out infinite; transform-origin: 582px 203px; }
+    .chair { animation: chair 6s ease-in-out infinite; }
+    .steam path { animation: steam 4s ease-in-out infinite; opacity: 0; }
+    .steam path:nth-child(2) { animation-delay: 1.2s; }
+    .steam path:nth-child(3) { animation-delay: 2.2s; }
+    .code-line { animation: codePulse 2.5s ease-in-out infinite; }
+    .code-line:nth-child(2n) { animation-delay: .6s; }
+    .code-line:nth-child(3n) { animation-delay: 1.2s; }
+    .typing-text { animation: textGlow 2.8s ease-in-out infinite; }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: .25; transform: scale(.85); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-16px); }
+    }
+
+    @keyframes floatFast {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-10px) translateX(7px); }
+    }
+
+    @keyframes orbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes glow {
+      0%, 100% { opacity: .65; filter: drop-shadow(0 0 10px rgba(125, 207, 255, .45)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 22px rgba(187, 154, 247, .55)); }
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes typeLeft {
+      0%, 100% { transform: rotate(-1deg) translateY(0); }
+      50% { transform: rotate(5deg) translateY(3px); }
+    }
+
+    @keyframes typeRight {
+      0%, 100% { transform: rotate(1deg) translateY(0); }
+      50% { transform: rotate(-5deg) translateY(3px); }
+    }
+
+    @keyframes nod {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(2deg) translateY(2px); }
+    }
+
+    @keyframes chair {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(3px); }
+    }
+
+    @keyframes steam {
+      0% { opacity: 0; transform: translateY(8px); }
+      30% { opacity: .8; }
+      100% { opacity: 0; transform: translateY(-22px); }
+    }
+
+    @keyframes codePulse {
+      0%, 100% { opacity: .45; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes textGlow {
+      0%, 100% { filter: drop-shadow(0 0 3px rgba(125, 207, 255, .3)); }
+      50% { filter: drop-shadow(0 0 10px rgba(125, 207, 255, .8)); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1a2452"/>
+      <stop offset="45%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#080b16"/>
+    </radialGradient>
+
+    <linearGradient id="desk" x1="249" y1="325" x2="951" y2="325" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f2a44"/>
+      <stop offset=".5" stop-color="#29365a"/>
+      <stop offset="1" stop-color="#1f2a44"/>
+    </linearGradient>
+
+    <linearGradient id="screen" x1="391" y1="105" x2="809" y2="289" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1b2440"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#heroGlow)"/>
+  <path opacity=".32" d="M0 315C126 286 212 344 334 313C455 282 503 211 641 241C779 271 804 356 948 327C1056 305 1121 252 1200 267V420H0V315Z" fill="#111a33"/>
+  <path opacity=".2" d="M0 87C120 128 214 67 341 94C468 121 486 179 642 153C798 127 852 74 1004 95C1096 108 1145 147 1200 132V0H0V87Z" fill="#202a50"/>
+
+  <g class="stars">
+    <circle cx="87" cy="78" r="2" fill="#7dcfff"/>
+    <circle cx="160" cy="171" r="1.8" fill="#bb9af7"/>
+    <circle cx="268" cy="52" r="1.5" fill="#c0caf5"/>
+    <circle cx="1008" cy="61" r="2" fill="#9ece6a"/>
+    <circle cx="1079" cy="157" r="1.7" fill="#7dcfff"/>
+    <circle cx="926" cy="205" r="1.4" fill="#f7768e"/>
+    <circle cx="731" cy="58" r="1.5" fill="#c0caf5"/>
+    <circle cx="467" cy="53" r="1.7" fill="#7aa2f7"/>
+    <circle cx="108" cy="257" r="1.5" fill="#c0caf5"/>
+    <circle cx="1125" cy="271" r="2" fill="#bb9af7"/>
+  </g>
+
+  <g class="orbit" opacity=".38">
+    <circle cx="600" cy="66" r="4" fill="#7dcfff"/>
+    <circle cx="600" cy="354" r="3" fill="#bb9af7"/>
+  </g>
+
+  <g class="float-slow">
+    <rect x="170" y="96" width="154" height="74" rx="14" fill="#121a31" stroke="#29324d"/>
+    <text x="195" y="126" fill="#7dcfff" font-family="Consolas, monospace" font-size="18">&lt;Wassim /&gt;</text>
+    <text x="196" y="151" fill="#9ece6a" font-family="Consolas, monospace" font-size="14">builds ideas</text>
+  </g>
+
+  <g class="float-fast">
+    <rect x="873" y="91" width="144" height="82" rx="14" fill="#121a31" stroke="#29324d"/>
+    <text x="900" y="126" fill="#bb9af7" font-family="Consolas, monospace" font-size="20">{ code }</text>
+    <text x="906" y="151" fill="#7dcfff" font-family="Consolas, monospace" font-size="14">deploy()</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="368" y="86" width="464" height="228" rx="24" fill="#0a0f1e" stroke="#29324d" stroke-width="3"/>
+    <rect x="392" y="111" width="416" height="178" rx="14" fill="url(#screen)"/>
+    <rect class="screen-glow" x="410" y="132" width="160" height="12" rx="6" fill="#7dcfff"/>
+    <rect class="code-line" x="410" y="163" width="112" height="10" rx="5" fill="#9ece6a"/>
+    <rect class="code-line" x="536" y="163" width="188" height="10" rx="5" fill="#7aa2f7"/>
+    <rect class="code-line" x="439" y="190" width="286" height="10" rx="5" fill="#bb9af7"/>
+    <rect class="code-line" x="439" y="217" width="178" height="10" rx="5" fill="#f7768e"/>
+    <rect class="code-line" x="631" y="217" width="93" height="10" rx="5" fill="#9ece6a"/>
+    <text class="typing-text" x="410" y="260" fill="#c0caf5" font-family="Consolas, monospace" font-size="20">Full Stack Developer</text>
+    <rect class="cursor" x="639" y="242" width="10" height="24" rx="3" fill="#7dcfff"/>
+  </g>
+
+  <g class="chair">
+    <path d="M522 276C526 235 556 213 600 213C644 213 674 235 678 276L691 354H509L522 276Z" fill="#202a50" stroke="#29324d" stroke-width="3"/>
+    <rect x="535" y="312" width="130" height="42" rx="19" fill="#111827" stroke="#29324d" stroke-width="3"/>
+  </g>
+
+  <g class="head">
+    <circle cx="600" cy="199" r="34" fill="#f0c6a8"/>
+    <path d="M566 197C567 161 590 148 613 153C638 159 645 178 634 201C620 188 598 184 566 197Z" fill="#151b2e"/>
+    <circle cx="589" cy="202" r="3" fill="#111827"/>
+    <circle cx="616" cy="202" r="3" fill="#111827"/>
+    <path d="M591 215C598 220 607 220 614 215" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <path d="M552 252C563 231 584 221 602 221C620 221 642 232 652 252L666 312H538L552 252Z" fill="#7aa2f7" stroke="#29324d" stroke-width="3"/>
+  <path d="M566 252L526 288" stroke="#f0c6a8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M636 252L676 288" stroke="#f0c6a8" stroke-width="16" stroke-linecap="round"/>
+  <ellipse class="hand-left" cx="515" cy="292" rx="18" ry="9" fill="#f0c6a8"/>
+  <ellipse class="hand-right" cx="687" cy="292" rx="18" ry="9" fill="#f0c6a8"/>
+
+  <rect x="250" y="317" width="700" height="28" rx="14" fill="url(#desk)"/>
+  <rect x="302" y="345" width="32" height="58" rx="10" fill="#172033"/>
+  <rect x="866" y="345" width="32" height="58" rx="10" fill="#172033"/>
+  <rect x="487" y="289" width="226" height="33" rx="9" fill="#0b1020" stroke="#29324d" stroke-width="3"/>
+  <rect x="509" y="300" width="28" height="7" rx="3.5" fill="#565f89"/>
+  <rect x="548" y="300" width="28" height="7" rx="3.5" fill="#565f89"/>
+  <rect x="587" y="300" width="28" height="7" rx="3.5" fill="#565f89"/>
+  <rect x="626" y="300" width="28" height="7" rx="3.5" fill="#565f89"/>
+  <rect x="665" y="300" width="28" height="7" rx="3.5" fill="#565f89"/>
+
+  <g transform="translate(773 272)">
+    <rect x="0" y="31" width="48" height="14" rx="7" fill="#0b1020" stroke="#29324d" stroke-width="3"/>
+    <path d="M8 31L14 0H40L33 31H8Z" fill="#f7768e" stroke="#29324d" stroke-width="3"/>
+    <g class="steam" stroke="#c0caf5" stroke-width="3" stroke-linecap="round">
+      <path d="M19 -8C12 -18 28 -21 21 -32"/>
+      <path d="M30 -7C23 -17 39 -20 32 -31"/>
+      <path d="M39 -8C32 -18 48 -21 41 -32"/>
+    </g>
+  </g>
+
+  <g class="float-fast" font-family="Consolas, monospace" font-weight="700" font-size="28">
+    <text x="121" y="261" fill="#7dcfff">&lt;/&gt;</text>
+    <text x="1012" y="247" fill="#9ece6a">01</text>
+    <text x="268" y="247" fill="#bb9af7">npm</text>
+    <text x="899" y="307" fill="#f7768e">git</text>
+  </g>
+
+  <text x="600" y="379" text-anchor="middle" fill="#c0caf5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">
+    Hi, I'm Wassim Afouss
+  </text>
+  <text x="600" y="405" text-anchor="middle" fill="#7dcfff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">
+    Full Stack Developer | Computer Science Student
+  </text>
+</svg>
